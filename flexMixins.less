@@ -1,0 +1,16 @@
+.flexOrder(@value){
+  -webkit-box-ordinal-group: @value;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: @value;      /* OLD - Firefox 19- */
+  -ms-flex-order: @value;              /* TWEENER - IE 10 */
+  -webkit-order: @value;               /* NEW - Chrome */
+  order: @value;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+
+.flex(@value:1){
+  -webkit-box-flex: @value;
+  -webkit-flex: @value @value;
+  -ms-flex: @value @value;
+  flex: @value @value;
+}
+
